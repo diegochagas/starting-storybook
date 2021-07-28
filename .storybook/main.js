@@ -8,6 +8,10 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
     "@storybook/addon-knobs",
+    {
+      name: '@storybook/addon-docs',
+      options: { configureJSX: true },
+    }, 
     "storybook-formik/register",
   ]
 }

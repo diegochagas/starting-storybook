@@ -22,7 +22,6 @@ export const movie = {
 };
 
 export const Default = () => {
-  
   return (
     <MovieListItem {...movie} onLearnMore={action('learn more')} />
   )
@@ -40,7 +39,5 @@ export const AngryMen = () => {
   )
 }
 
-AngryMen.story = {
-  name: '12 Angry Men',
-  decorators: [withKnobs],
-}
+AngryMen.storyName = '12 Angry Men';
+AngryMen.decorators = [withKnobs];

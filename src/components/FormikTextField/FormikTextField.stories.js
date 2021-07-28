@@ -19,17 +19,13 @@ export const Default = () => {
   return <FormikTextField name="firstName" label="Firstname" />;
 };
 
-Default.story = {
-  decorators: [withFormik({ firstName: 'Maurice'})],
-};
+Default.decorators = [withFormik({ firstName: 'Maurice'})];
 
 export const Empty = () => {
   return <FormikTextField name="firstName" label="Firstname" />;
 };
 
-Empty.story = {
-  decorators: [withFormik({ firstName: ''})],
-};
+Empty.decorators = [withFormik({ firstName: ''})];
 
 export const WithError  = () => {
   return (
@@ -40,16 +36,14 @@ export const WithError  = () => {
   );
 }
 
-WithError.story = {
-  decorators: [
-    withFormik(
-      { firstName: '' },
-      {
-        validationSchema: yup.object().shape({
-          firstName: yup.string().required('Firstname is required'),
-        }),
-        validateOnMount: true,
-      }
-    ),
-  ],
-};
+WithError.decorators = [
+  withFormik(
+    { firstName: '' },
+    {
+      validationSchema: yup.object().shape({
+        firstName: yup.string().required('Firstname is required'),
+      }),
+      validateOnMount: true,
+    }
+  ),
+];
