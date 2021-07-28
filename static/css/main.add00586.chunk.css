@@ -1,0 +1,76 @@
+.movie-list-item {
+  width: 300px;
+  margin: 10px;
+}
+
+.movie-list-item-image {
+  height: 169px;
+}
+
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.save-cancel-buttons .MuiButton-label {
+  width: 4em;
+}
+
+.movie-details-form {
+  display: flex;
+  margin: 1rem 0.5rem;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-details-form > .MuiTextField-root {
+  flex: 1 1;
+  width: 800px;
+  max-width: 95vw;
+}
+
+.movie-details-form > .MuiTextField-root > * {
+  border: 1px solid #ccc;
+}
+
+.movie-details-form > .MuiButtonGroup-root > * {
+  margin-top: 1rem;
+}
+
+.movie-details-form > .MuiTextField-root > label {
+  border: none;
+}
+
+.movie-details-form > .MuiTextField-root > .MuiFormHelperText-root {
+  border: none;
+}
+
+
+/*# sourceMappingURL=main.add00586.chunk.css.map*/
